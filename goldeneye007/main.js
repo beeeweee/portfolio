@@ -24,7 +24,7 @@ function addEventListeners(){
   $('.games_played .value').text(gamesPlayed);
   $('.attempts .value').text(attemptsCounter);
   $('.accuracy .value').text(matchAccuracy,"%");
-  $("#settingsButton").on('click', showGameSettingsLoad);
+  $(".settingsButtonAction").on('click', showGameSettingsLoad);
   $('#gameSettingsShadowDiv').on('click', hideGameSettingsLoad);
 }
 
@@ -47,24 +47,25 @@ var frontCardClassesArray = ['ar33_assualt_rifle'
 ,'kf7_soviet'
 ,'klobb'
 ,'moonraker_laser'
-,'phantom'
+// ,'phantom'
 ,'rc_p90'
 ,'shotgun'
-,'silenced_pp7'
+// ,'silenced_pp7'
 ,'sniper_rifle'
-,'grenade_launcher',
-'ar33_assualt_rifle'
+// ,'grenade_launcher'
+,'ar33_assualt_rifle'
 ,'dd44_dostovei'
 ,'golden_gun'
 ,'kf7_soviet'
 ,'klobb'
 ,'moonraker_laser'
-,'phantom'
+// ,'phantom'
 ,'rc_p90'
 ,'shotgun'
-,'silenced_pp7'
+// ,'silenced_pp7'
 ,'sniper_rifle'
-,'grenade_launcher'];
+// ,'grenade_launcher'
+];
 
 function shuffleCards(frontCards){
   var currentIndex = frontCards.length, temporaryValue, randomIndex
@@ -136,8 +137,6 @@ function handleCardClick(){
     return;
   }
   $(this).addClass('hideTheBack');
-
-  //$(this).addClass('tempLockCard');
     if(theFirstCard === null){
       theFirstCard = this;
     } else {
@@ -158,7 +157,6 @@ function handleCardClick(){
                 displayGamesPlayed();
             }
       } else {
-        //lockAllCards();
         setTimeout( revertCards, 1500);
         attemptsCounter += 1;
       }
@@ -170,23 +168,12 @@ function handleCardClick(){
 function revertCards(){
   $(theFirstCard).removeClass('hideTheBack');
   $(theSecondCard).removeClass('hideTheBack');
-  //$(theFirstCard).removeClass('tempLockCard');
- // $(theSecondCard).removeClass('tempLockCard');
   clickableCards=true;
- //$('.card').removeClass('tempLockCard');
   theFirstCard = null;
   theSecondCard = null;
 }
-/*
-function lockAllCards() {
-  var selectAllBackCards = $('.card');
-  selectAllBackCards.addClass('tempLockCard');
-}
-*/
+
 function matchedCardRevert(){
-    //$(theFirstCard).addClass('lockCard');
-   // $(theSecondCard).addClass('lockCard');
-    //$('.card').removeClass('tempLockCard');
     clickableCards=true;
     theFirstCard = null;
     theSecondCard = null;
@@ -201,7 +188,6 @@ function revertAllCardsToBack(){
   var selectAllCards = $('.card');
   clickableCards=true;
   selectAllCards.removeClass('hideTheBack');
-  //selectAllCards.removeClass('tempLockCard lockCard');
 }
 
 function fullGameReset(){

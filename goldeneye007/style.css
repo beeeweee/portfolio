@@ -74,8 +74,8 @@ body {
 
 #game-container {
     display: inline-block;
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
 
     font-size: 0;
 }
@@ -117,7 +117,7 @@ body {
 
 #game-card-area {
     display: inline-block;
-    height: 100%;
+    height: 80%;
     width: 90%;
 
     vertical-align: top;
@@ -128,7 +128,7 @@ body {
 }
 
 .game-card-row {
-    height: 30%;
+    height: 35%;
     width: 100%;
 
     display: inline-block;
@@ -143,7 +143,7 @@ body {
     display: inline-block;
     position: relative;
     height: 100%;
-    width: 11%;
+    width: 15%;
     text-align: center;
     
 }
@@ -247,28 +247,28 @@ body {
 
 #stats-container {
     display: inline-block;
-    width: 10%;
-    height: 100%;
-    vertical-align: top;
+    width: 100%;
+    height: 20%;
+    /* vertical-align: top; */
 }
 
 #game-controls {
     display: inline-block;
-    height: 70%;
+    height: 30%;
     width: 100%;
     text-align: center;
 }
 
-#game-controls .games_played, #game-controls .attempts, #game-controls .accuracy {
+.games_played, #game-controls .attempts, #game-controls .accuracy {
     display: inline-block;
-    height: 25%;
-    width: 90%;
-    margin-right: 5%;
+    height: 100%;
+    width: 20%;
+    /* margin-right: 5%;
     margin-left: 5%;
-    margin-top:2%;
+    margin-top:2%; */
     text-align: center;
-    border: 1px solid gold;
-    border-radius: 25%;
+    /* border: 1px solid gold;
+    border-radius: 25%; */
     background: black;
     color: gold;
     font-size: 12px;
@@ -279,49 +279,54 @@ body {
 }
 
 #button-container{
-height: 20%;
+height: 30%;
 display: inline-block;
-margin-top: 3%;
-margin-bottom: 3%;
+/* margin-top: 3%;
+margin-bottom: 3%; */
 width: 100%;
 }
 
-#reset-button, .newGame-button {
+#reset-button,
+.newGame-button,
+#settingsButton,
+#about>a, #button-container>.game-buttons-style {
     display: inline-block;
-    background-color: black;
-    border: 4px solid gold;
-    color: gold;
-    margin-top: 5%;
-    width: 75%;
-    font-size: 14px;
+    border: 2px solid gold;
+    width: 45%;
     cursor: pointer;
+       text-decoration: none;
+       color: gold;
+       size: 20px;
+       vertical-align: middle;
+       background: black;
+       margin-top: 1%;
+       text-align: center;
 }
 
 #game-settings {
     display: inline-block;
-    height: 20%;
+    height: 50%;
     width: 100%;
     vertical-align: bottom;
-    margin-top:10%;
+    /* margin-top:10%; */
     
 }
 
 #about, #settings {
     display: inline-block;
     height: 25%;
-    width: 100%;
+    width: 50%;
     text-align: center;
 
 }
 
-#about a, #settingsButton, #goBackToGame { 
+#button-container > #about a, #settingsButton, #goBackToGame { 
     text-decoration: none;
     color: gold;
     size: 20px;
     vertical-align: middle;
     border: 3px solid gold;
     background: black;
-    padding: 2%;
 }
 
 #mainContainer {

@@ -1,0 +1,377 @@
+body {
+    background-image: url(images/007_background.jpg);
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+.startPage {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/goldeneye_watch_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.startPageContainer {
+    height: 100%;
+}
+
+.startPageLogoContainer {
+    display: inline-block;
+    height: 60%;
+    width: auto;
+}
+
+.startPageLogoContainer img {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+}
+
+#startButton {
+    color: gold;
+    width: 45%;
+    height: 20%;
+    font-size: 54px;
+    vertical-align: middle;
+    border: 3px solid gold;
+    background-color: black;
+    margin-top: 25%;
+}
+
+#top-header {
+    height: 20%;
+}
+
+#header-logo {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+#header-logo img {
+    height: 100%;
+    width: auto;
+    border-radius: 25%;
+    align-content: center;
+}
+
+#stats-game-container {
+    height: 80%;
+    font-size: 0;
+}
+
+#stats-game-container > * {
+    font-size: 1rem;
+}
+
+#game-container {
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+
+    font-size: 0;
+}
+
+#gameSettingsWindowContainer{
+    display: none;
+    width: 80%;
+    height: 75%;
+    position: absolute;
+    margin-top: 11.5%;
+    margin-left: 5%;
+    z-index: 2;
+    border: 5px solid gold;
+    border-radius: 25%;
+    background: black;
+    text-align: center
+}
+
+#gameSettingsShadowDiv {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#game-container > * {
+    font-size: 1rem;
+}
+
+#health-container {
+    height: 100%;
+    width: 5%; 
+    display: inline-block;
+}
+#health-container img {
+    height: 100%;
+    width: 100%;
+}
+
+#game-card-area {
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+
+    vertical-align: top;
+}
+
+#game-card-area .game-card-row:nth-child(1) {
+    margin-top: 1%;
+}
+
+.game-card-row {
+    height: 30%;
+    width: 100%;
+
+    display: inline-block;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    text-align: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 11%;
+    text-align: center;
+    
+}
+
+.lockCard {
+    pointer-events: none;
+}
+
+.tempLockCard {
+    pointer-events: none;
+}
+
+.front, .back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-size: 100% 100%;
+    border: 1px solid gold;
+    cursor: pointer;
+  }
+
+  .front {
+    background-size: 100% 100%;
+  }
+ 
+  .back{
+    background-image: url(images/backofcard.jpg);
+  }
+
+  .hideTheBack > .back{
+    display: none;
+  }
+
+.ar33_assualt_rifle {
+    background-image: url(images/cards/AR33_Assault_Rifle.png);
+}
+/* .front[cardVisual=ar33_assault_rifle]{
+    background-image: url(images/cards/AR33_Assault_Rifle.png);
+} */
+
+.dd44_dostovei {
+    background-image: url(images/cards/DD44_Dostovei.png);
+}
+
+.golden_gun {
+    background-image: url(images/cards/Golden_Gun.png);
+}
+
+.kf7_soviet{
+    background-image: url(images/cards/KF7_Soviet.png);
+}
+
+.klobb {
+    background-image: url(images/cards/Klobb.png);
+}
+
+.moonraker_laser{
+    background-image: url(images/cards/Moonraker_Laser.png);
+}
+
+.phantom{
+    background-image: url(images/cards/Phantom.png);
+}
+
+.rc_p90{
+    background-image: url(images/cards/RC_P90.png);
+}
+
+.shotgun{
+    background-image: url(images/cards/Shotgun.png);
+}
+
+.silenced_pp7 {
+    background-image: url(images/cards/Silenced_PP7.png);
+}
+
+.sniper_rifle {
+    background-image: url(images/cards/Sniper_Rifle.png);
+}
+
+.grenade_launcher {
+    background-image: url(images/cards/Grenade_Launcher.png);
+}
+
+#armor-container {
+    height: 100%;
+    width: 5%; 
+    display: inline-block;
+}
+
+#armor-container img {
+    height: 100%;
+    width: 100%;
+}
+
+#stats-container {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    vertical-align: top;
+}
+
+#game-controls {
+    display: inline-block;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+#game-controls .games_played, #game-controls .attempts, #game-controls .accuracy {
+    display: inline-block;
+    height: 25%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top:2%;
+    text-align: center;
+    border: 1px solid gold;
+    border-radius: 25%;
+    background: black;
+    color: gold;
+    font-size: 12px;
+}
+
+#game-controls .games_played {
+    height: 10%;
+}
+
+#button-container{
+height: 20%;
+display: inline-block;
+margin-top: 3%;
+margin-bottom: 3%;
+width: 100%;
+}
+
+#reset-button, .newGame-button {
+    display: inline-block;
+    background-color: black;
+    border: 4px solid gold;
+    color: gold;
+    margin-top: 5%;
+    width: 75%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#game-settings {
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    vertical-align: bottom;
+    margin-top:10%;
+    
+}
+
+#about, #settings {
+    display: inline-block;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+
+}
+
+#about a, #settingsButton, #goBackToGame { 
+    text-decoration: none;
+    color: gold;
+    size: 20px;
+    vertical-align: middle;
+    border: 3px solid gold;
+    background: black;
+    padding: 2%;
+}
+
+#mainContainer {
+    display: inline-block;
+    background-color: black;
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainContentContainer {
+    display: inline-block;
+    width: 55%;
+    text-align: center;
+    height: 100%;
+    vertical-align: top;
+}
+
+#titleContainer {
+    font-size: 50px;
+}
+
+#rightSideContainer {
+    display: inline-block;
+    width: 44%;
+    height: 100%;
+}
+
+#rightSideTopSpacer {
+    height: 50%;
+    width: 100%;
+}
+
+
+#aboutMeImage {
+    display: inline-block;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+#aboutMeImage img{
+    margin-top: 25%;
+    margin-right: 5%;
+    display: inline-block;
+    height: 30%;
+    width: 60%;
+    border-radius: 80%;
+    
+}
